@@ -20,20 +20,13 @@ This project enables remote control and automation of a **SCARA robot**, incorpo
 ## 📜 System Architecture
 
 ```mermaid
-graph LR
-  A[Next.js Frontend] -- HTTP --> B[Express.js Backend]
-  B -- Serial Communication --> C[Arduino Mega]
-  C -- Controls --> D[Stepper Motors & Magnet]
-
-  subgraph Hardware
-    C
-    D
-  end
-
-  subgraph Software
-    A
-    B
-  end
+graph TD;
+    A["Next.js Frontend"]-->|HTTP Requests|B["Node.js Backend"];
+    B-->|Serial Communication|C["Arduino Mega"];
+    C-->|Control Signals|D["Stepper Motors"];
+    C-->|Control Signal|E["Magnet End Effector"];
+    B-->|Status Updates|A;
+    C-->|Status Updates|B;
 ```
 
 ---
