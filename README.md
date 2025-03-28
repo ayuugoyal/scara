@@ -2,7 +2,14 @@
 
 A **comprehensive control system** for a **4-axis SCARA robot**, integrating an **Express.js backend API**, **Next.js frontend**, and **Arduino Mega firmware** for **precise motion control**.
 
----
+## Demo Video
+
+<video width="640" height="360" controls>
+  <source src="https://www.youtube.com/watch?v=xUnuTbNwZIY" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+[Watch the demo video here](https://www.youtube.com/watch?v=xUnuTbNwZIY).
 
 ## 🚀 Project Overview
 
@@ -14,8 +21,6 @@ This project enables remote control and automation of a **SCARA robot**, incorpo
 - **Backend API for Communication** (Express.js, TypeScript)
 - **Arduino Firmware for Hardware Control** (Arduino Mega)
 - **Custom 3D Printed Parts** for structure and motion control
-
----
 
 ## 📜 System Architecture
 
@@ -29,8 +34,6 @@ graph TD;
     C-->|Status Updates|B;
 ```
 
----
-
 ## 🔩 Hardware Components
 
 | Component           | Details                               |
@@ -42,8 +45,6 @@ graph TD;
 | **Power Supply**    | 12V DC for motors, 5V for electronics |
 | **Belts & Pulleys** | GT2 Timing Belt (200mm, 300mm, 400mm) |
 | **Frame & Links**   | Custom 3D Printed PLA Components      |
-
----
 
 ## 🖥️ Software Components
 
@@ -64,8 +65,6 @@ graph TD;
 - Web-based **control panel** with real-time robot status
 - **Interactive UI** for manual and automated control
 - **Responsive design** for both desktop and mobile
-
----
 
 ## ⚙️ Installation and Setup
 
@@ -118,8 +117,6 @@ pnpm run dev
 
 - Access UI at **http://localhost:3000**
 
----
-
 ## 📡 API Documentation
 
 ### **Port Management Endpoints**
@@ -145,8 +142,6 @@ pnpm run dev
 | `M{motor_index} {position} {speed}` | Move motor to specific position |
 | `M,1`                               | **Turn on** electromagnet       |
 | `M,0`                               | **Turn off** electromagnet      |
-
----
 
 ## 📂 Project Structure
 
