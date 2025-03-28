@@ -4,12 +4,7 @@ A **comprehensive control system** for a **4-axis SCARA robot**, integrating an 
 
 ## Demo Video
 
-<div align="center">
-  <video width="640" height="360" controls>
-    <source src="https://res.cloudinary.com/djd69dyvv/video/upload/v1743192138/demo/dj6xbxnrw0iva4tb1sgm.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
-</div>
+https://github.com/user-attachments/assets/922ea7b5-70ef-4cfa-be29-8c4aa264a613
 
 ## 🚀 Project Overview
 
