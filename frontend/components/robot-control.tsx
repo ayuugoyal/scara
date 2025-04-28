@@ -20,6 +20,8 @@ export default function RobotControl() {
   const [magnetActive, setMagnetActive] = useState(false)
   const [isConnected, setIsConnected] = useState(true)
 
+  console.log("Motors:", isConnected, motors)
+
   const handleStepsChange = (index: number, value: number) => {
     const newMotors = [...motors]
     newMotors[index].steps = value
@@ -52,6 +54,8 @@ export default function RobotControl() {
         },
         body: JSON.stringify({ command }),
       })
+
+      setIsConnected(true);
 
       if (!response.ok) {
         throw new Error("Failed to send command")
